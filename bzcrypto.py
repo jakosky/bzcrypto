@@ -27,7 +27,6 @@ class BzCrypto:
             ).read()
         except Exception as e:
             self.logger.error(f"Error decrypting data.")
-            self.logger.error(e)
             raise e
         return decrypted_data
 
@@ -41,6 +40,5 @@ class BzCrypto:
             ).read()
         except Exception as e:
             self.logger.error(f"Error encrypting data.")
-            self.logger.error(e)
             raise e
         return encrypted_data
