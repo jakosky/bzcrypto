@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="bzcrypto",
@@ -7,6 +7,6 @@ setup(
     author="Jay Jakosky",
     author_email="jay.jakosky@gmail.com",
     description="Shared AWS KMS encryption/decryption library for Bozzetti",
-    packages=find_packages(),
+    packages=["bzcrypto"],
     install_requires=["botocore >= 1.29.24", "aws-encryption-sdk >= 3.1.1"],
 )
